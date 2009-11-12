@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project relativePaths="false" version="4">
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectSolutions>
+      <solutionPath path="${project}/solutions/mps.samples.plugin.sandbox.sandbox/mps.samples.plugin.sandbox.sandbox.msd" folder="" />
+    </projectSolutions>
+    <projectLanguages>
+      <languagePath path="${project}/languages/plugin/plugin.mpl" />
+    </projectLanguages>
+    <projectDevkits />
+    <genConfs />
+  </component>
+  <component name="ProjectDetails">
+    <option name="projectName" value="de.nerche.mps.plugin" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+  </component>
+</project>
+

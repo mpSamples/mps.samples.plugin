@@ -1,0 +1,23 @@
+This is a no-frills sample to show how to create a plugin to read a file
+into a solution. There are no checks or other se sugar, just the bare file
+reading.
+
+This sample shows:
+* Creation of a plugin which registeres in Tools menu
+* Import of a csv file into a solution (using a Swing FileChooser)
+* csv file generation with gtext
+
+Note: For mass node edit/create you should switch to loading mode
+before and back to the old mode after modifying the model as discussed
+in http://www.jetbrains.net/devnet/thread/283794?tstart=0
+
+Usage
+-----
+* Open in MPS
+* Open the MyCrowd sandbox solution
+* (You may play with the sandbox solution MyCrowd - add and remove lines)
+* Select in menu Tools/MyGroup/Import Crowd
+* Choose a file, e.g. the persons.csv from project root
+* All old lines should be removed and the line from csv file should be
+  displayed
+* You may generate csv files again from the model
