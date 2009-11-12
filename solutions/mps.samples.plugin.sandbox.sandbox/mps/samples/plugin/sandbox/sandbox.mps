@@ -13,14 +13,14 @@
   <maxImportIndex value="0" />
   <node type="mps.sample.plugin.structure.Crowd" id="6833784181526701747">
     <property name="name" value="MyCrowd" />
-    <node role="member" type="mps.sample.plugin.structure.Person" id="8369951910274046248">
+    <node role="member" type="mps.sample.plugin.structure.Person" id="8369951910274493998">
       <property name="name" value="JetBrains s.r.o." />
       <property name="street" value="Klanova" />
       <property name="number" value="9/506" />
       <property name="zip" value="14700" />
       <property name="city" value="Prague" />
     </node>
-    <node role="member" type="mps.sample.plugin.structure.Person" id="8369951910274046249">
+    <node role="member" type="mps.sample.plugin.structure.Person" id="8369951910274493999">
       <property name="name" value="Joe Doe" />
       <property name="street" value="Foo" />
       <property name="number" value="42" />

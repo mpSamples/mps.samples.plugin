@@ -6,6 +6,7 @@ This sample shows:
 * Creation of a plugin which registeres in Tools menu
 * Import of a csv file into a solution (using a Swing FileChooser)
 * csv file generation with gtext
+* the use of baseLanguage.logging to post messages into MPS Messages window
 
 Note: For mass node edit/create you should switch to loading mode
 before and back to the old mode after modifying the model as discussed

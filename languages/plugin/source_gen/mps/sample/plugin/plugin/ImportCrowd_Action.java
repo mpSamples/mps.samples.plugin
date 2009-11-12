@@ -81,7 +81,6 @@ public class ImportCrowd_Action extends GeneratedAction {
           node.value = ListSequence.fromList(SModelOperations.getRoots(ImportCrowd_Action.this.mdl, "mps.sample.plugin.structure.Crowd")).first();
         }
       });
-
       //  first clean up old nodes
       ModelAccess.instance().runWriteActionInCommand(new Runnable() {
 
@@ -89,15 +88,17 @@ public class ImportCrowd_Action extends GeneratedAction {
           SLinkOperations.removeAllChildren(node.value, "member");
         }
       });
+      LOG.info("Old nodes removed");
 
       //  then read the contents of the file
       ImportCrowd_Action.this.readFile(node.value);
+      LOG.info("Update completed");
     } catch (Throwable t) {
       LOG.error("User's action execute method failed. Action:" + "ImportCrowd", t);
     }
   }
 
-  /* package */File getFileName() {
+  /* package */File getFile() {
     JFrame jFrame = new JFrame("FileChooserDemo");
     jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     jFrame.pack();
@@ -130,6 +131,7 @@ public class ImportCrowd_Action extends GeneratedAction {
         }
       });
     } catch (Exception e) {
+      LOG.error("Could not read a line", e);
     }
   }
 
@@ -137,7 +139,7 @@ public class ImportCrowd_Action extends GeneratedAction {
     //  seems to be an MPS bug: although the Exception is thrown here, the generated Java method does not
     //  get the throws Exception
     try {
-      File selectedFile = ImportCrowd_Action.this.getFileName();
+      File selectedFile = ImportCrowd_Action.this.getFile();
       FileInputStream fis = new FileInputStream(selectedFile);
       BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
       while (reader.ready()) {
@@ -146,6 +148,7 @@ public class ImportCrowd_Action extends GeneratedAction {
       reader.close();
       fis.close();
     } catch (Exception e) {
+      LOG.error("Problems on reading the file", e);
     }
   }
 

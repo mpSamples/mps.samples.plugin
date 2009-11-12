@@ -77,17 +77,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyCrowd" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MyCrowd" pinned="false" current="true" current-in-tab="true">
         <entry file="mps://mps.samples.plugin.sandbox.sandbox/MyCrowd">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="897" selection-end="897" vertical-scroll-proportion="0.52352047" />
+            <state line="8" column="75" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportCrowd" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://mps.sample.plugin.plugin/ImportCrowd">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
           </provider>
         </entry>
       </file>
@@ -98,21 +105,21 @@
       <TreeState>
         <option name="expansion">
           <list>
-            <option value="/-home-jn-MPSProjects-mps.samples.plugin-solutions-mps.samples.plugin.sandbox.sandbox-mps.samples.plugin.sandbox.sandbox.msd/mps" />
-            <option value="/-home-jn-MPSProjects-mps.samples.plugin-solutions-mps.samples.plugin.sandbox.sandbox-mps.samples.plugin.sandbox.sandbox.msd" />
-            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)" />
-            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/mps.sample.plugin#6678986319116639847/mps" />
-            <option value="/" />
-            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/r:2780d607-6c6e-4a85-839c-7cc10b5d8958(mps.sample.plugin.plugin)" />
-            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/mps.sample.plugin#6678986319116639847/mps/r:84528a0f-5eed-45c2-a57e-2470f568d56e(mps.sample.plugin.generator.template.main@generator)" />
-            <option value="/-home-jn-MPSProjects-mps.samples.plugin-solutions-mps.samples.plugin.sandbox.sandbox-mps.samples.plugin.sandbox.sandbox.msd/mps/r:5a94f2b1-84e1-4509-866e-eb0bacaf98bd(mps.samples.plugin.sandbox.sandbox)" />
             <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/mps.sample.plugin#6678986319116639847" />
+            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)" />
+            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/r:2780d607-6c6e-4a85-839c-7cc10b5d8958(mps.sample.plugin.plugin)" />
+            <option value="/-home-jn-MPSProjects-mps.samples.plugin-solutions-mps.samples.plugin.sandbox.sandbox-mps.samples.plugin.sandbox.sandbox.msd/mps" />
             <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/r:87aec4ec-ca73-4562-8e9f-5af011f933ae(mps.sample.plugin.structure)" />
+            <option value="/-home-jn-MPSProjects-mps.samples.plugin-solutions-mps.samples.plugin.sandbox.sandbox-mps.samples.plugin.sandbox.sandbox.msd/mps/r:5a94f2b1-84e1-4509-866e-eb0bacaf98bd(mps.samples.plugin.sandbox.sandbox)" />
+            <option value="/-home-jn-MPSProjects-mps.samples.plugin-solutions-mps.samples.plugin.sandbox.sandbox-mps.samples.plugin.sandbox.sandbox.msd" />
+            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/mps.sample.plugin#6678986319116639847/mps/r:84528a0f-5eed-45c2-a57e-2470f568d56e(mps.sample.plugin.generator.template.main@generator)" />
+            <option value="/" />
+            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/mps.sample.plugin#6678986319116639847/mps" />
           </list>
         </option>
         <option name="selection">
           <list>
-            <option value="/-home-jn-MPSProjects-mps.samples.plugin-solutions-mps.samples.plugin.sandbox.sandbox-mps.samples.plugin.sandbox.sandbox.msd/mps" />
+            <option value="/681e5239-d663-468b-97f7-cc7a4fa4cdea(mps.sample.plugin)/r:2780d607-6c6e-4a85-839c-7cc10b5d8958(mps.sample.plugin.plugin)" />
           </list>
         </option>
       </TreeState>
@@ -121,6 +128,7 @@
   <component name="MessagesViewTool">
     <option name="autoscrollToSource" value="true" />
     <option name="errors" value="true" />
+    <option name="info" value="true" />
     <option name="warnings" value="true" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -333,13 +341,13 @@
     <frame x="10" y="1" width="1894" height="1160" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.49785176" order="7" side_tool="false" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Run Packaging Language Build Script" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913843" sideWeight="0.48335123" order="7" side_tool="false" />
+      <window_info id="Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.48120302" order="7" side_tool="false" />
       <window_info id="Supertypes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Model Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Replacement" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Module Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -351,10 +359,10 @@
       <window_info id="Module Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.4884892" order="7" side_tool="false" />
-      <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.4462943" order="7" side_tool="false" />
+      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.48657358" order="7" side_tool="false" />
+      <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.44199786" order="7" side_tool="false" />
       <window_info id="Concept Structure" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913843" sideWeight="0.5128894" order="7" side_tool="true" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913843" sideWeight="0.49838883" order="7" side_tool="true" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="RunClass" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -452,14 +460,19 @@
         <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
       </provider>
     </entry>
-    <entry file="mps://mps.samples.plugin.sandbox.sandbox/MyCrowd">
+    <entry file="mps://mps.sample.plugin.plugin/ImportCrowd">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="897" selection-end="897" vertical-scroll-proportion="0.52352047" />
+        <state line="8" column="75" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="mps://mps.samples.plugin.sandbox.sandbox/MyCrowd">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
       </provider>
     </entry>
   </component>

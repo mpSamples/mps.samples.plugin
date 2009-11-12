@@ -8,6 +8,7 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
+  <language namespace="760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)" version="83" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590361(jetbrains.mps.lang.plugin.constraints)" version="19" />
@@ -32,6 +33,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590345(jetbrains.mps.lang.pattern.structure)" version="0" />
   <languageAspect modelUID="r:87aec4ec-ca73-4562-8e9f-5af011f933ae(mps.sample.plugin.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="12" />
   <import index="1" modelUID="r:87aec4ec-ca73-4562-8e9f-5af011f933ae(mps.sample.plugin.structure)" version="0" />
@@ -54,7 +56,7 @@
     <property name="description" value="Imports a crowd from a file" />
     <property name="isAlwaysVisible" value="true" />
     <node role="methodDeclaration" type="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" id="5990609524822942255">
-      <property name="name" value="getFileName" />
+      <property name="name" value="getFile" />
       <node role="returnType" type="jetbrains.mps.baseLanguage.structure.ClassifierType" id="5990609524822952441">
         <link role="classifier" targetNodeId="5.~File" resolveInfo="File" />
       </node>
@@ -249,7 +251,6 @@
             </node>
           </node>
         </node>
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.Statement" id="5397140977715916280" />
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.RemarkStatement" id="5397140977716060451">
           <property name="value" value=" first clean up old nodes" />
         </node>
@@ -272,7 +273,13 @@
             </node>
           </node>
         </node>
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.Statement" id="4036323436965997439" />
+        <node role="statement" type="jetbrains.mps.baseLanguage.logging.structure.LogStatement" id="8369951910274338758">
+          <property name="severity" value="info" />
+          <node role="logExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8369951910274338759">
+            <property name="value" value="Old nodes removed" />
+          </node>
+        </node>
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.Statement" id="8369951910274338760" />
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.RemarkStatement" id="5990609524822988637">
           <property name="value" value=" then read the contents of the file" />
         </node>
@@ -285,6 +292,12 @@
                 <link role="variableDeclaration" targetNodeId="5397140977715916152" resolveInfo="node" />
               </node>
             </node>
+          </node>
+        </node>
+        <node role="statement" type="jetbrains.mps.baseLanguage.logging.structure.LogStatement" id="8369951910274343702">
+          <property name="severity" value="info" />
+          <node role="logExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8369951910274343703">
+            <property name="value" value="Update completed" />
           </node>
         </node>
       </node>
@@ -521,7 +534,18 @@
                 <link role="classifier" targetNodeId="4.~Exception" resolveInfo="Exception" />
               </node>
             </node>
-            <node role="catchBody" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5990609524822996088" />
+            <node role="catchBody" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5990609524822996088">
+              <node role="statement" type="jetbrains.mps.baseLanguage.logging.structure.LogStatement" id="8369951910274343704">
+                <property name="severity" value="error" />
+                <property name="hasException" value="true" />
+                <node role="logExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8369951910274343705">
+                  <property name="value" value="Could not read a line" />
+                </node>
+                <node role="exception" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8369951910274343706">
+                  <link role="variableDeclaration" targetNodeId="5990609524822996086" resolveInfo="e" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -653,7 +677,18 @@
                 <link role="classifier" targetNodeId="4.~Exception" resolveInfo="Exception" />
               </node>
             </node>
-            <node role="catchBody" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5990609524822996934" />
+            <node role="catchBody" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5990609524822996934">
+              <node role="statement" type="jetbrains.mps.baseLanguage.logging.structure.LogStatement" id="8369951910274343707">
+                <property name="severity" value="error" />
+                <property name="hasException" value="true" />
+                <node role="logExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8369951910274343708">
+                  <property name="value" value="Problems on reading the file" />
+                </node>
+                <node role="exception" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8369951910274343709">
+                  <link role="variableDeclaration" targetNodeId="5990609524822996932" resolveInfo="e" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
